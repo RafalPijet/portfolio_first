@@ -10,7 +10,6 @@ body {
 
 header {
   background: url("../images/header_background.jpg") no-repeat center;
-  height: 700px;
   margin: 0 auto;
 }
 
@@ -76,6 +75,7 @@ header .hero button {
   font-weight: 700;
   height: 65px;
   width: 242px;
+  margin-bottom: 155px;
 }
 
 .col-1 {
@@ -195,7 +195,8 @@ header .hero button {
 
 .reset-width, .services, .out, .about {
   margin: 0 auto;
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .prop-h1, .services h1, .out h1, .about h1 {
@@ -229,7 +230,6 @@ header .hero button {
 
 .services {
   background-color: #fff;
-  height: 568px;
 }
 
 .services .boxes {
@@ -239,6 +239,7 @@ header .hero button {
 .services .boxes .box {
   height: 200px;
   width: 280px;
+  margin-bottom: 105px;
 }
 
 .services .boxes .box p {
@@ -247,11 +248,11 @@ header .hero button {
 
 .out {
   background-color: #f7f7f7;
-  height: 1218px;
 }
 
 .out .boxes {
   margin-top: 77px;
+  padding-bottom: 120px;
 }
 
 .out .boxes .box {
@@ -285,8 +286,8 @@ header .hero button {
 }
 
 .about .boxes .box p {
-  margin-top: 14px;
   line-height: 23px;
+  margin-top: 14px;
 }
 
 .about .boxes .box img {

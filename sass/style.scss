@@ -20,7 +20,6 @@ body {
 
 header {
   background: url("../images/header_background.jpg") no-repeat center;
-  height: 700px;
   margin: 0 auto;
 
   nav {
@@ -85,6 +84,7 @@ header {
       font-weight: 700;
       height: 65px;
       width: 242px;
+      margin-bottom: 155px;
     }
   }
 }
@@ -103,11 +103,11 @@ header {
 .col-12 {flex: 100%;}
 
 .container {
+  //border: 1px solid deeppink;
   margin: 0 auto;
   max-width: 940px;
   position: relative;
   width: 100%;
-  //border: 1px solid deeppink;
 }
 
 .row {
@@ -153,7 +153,8 @@ header {
 
 .reset-width {
   margin: 0 auto;
-  width: 1400px;
+  max-width: 1400px;
+  width: 100%;
 }
 
 .prop-h1 {
@@ -187,7 +188,6 @@ header {
 
 .services {
   background-color: $white;
-  height: 568px;
   @extend .reset-width;
 
   h1 {
@@ -204,6 +204,7 @@ header {
     .box {
       height: 200px;
       width: 280px;
+      margin-bottom: 105px;
 
       h4 {
         @extend .prop-h4
@@ -219,7 +220,6 @@ header {
 
 .out {
   background-color: $grey-very-light;
-  height: 1218px;
   @extend .reset-width;
 
   h1 {
@@ -232,6 +232,7 @@ header {
 
   .boxes {
     margin-top: 77px;
+    padding-bottom: 120px;
 
     .box {
       height: 393px;
