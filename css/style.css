@@ -96,6 +96,10 @@ header .hero button {
   text-transform: uppercase;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .flex-center {
   -ms-flex-pack: center;
       justify-content: center;
@@ -106,8 +110,64 @@ header .hero button {
       justify-content: space-between;
 }
 
+.flex-center-align {
+  -ms-flex-align: center;
+      align-items: center;
+}
+
 .flex-content-end {
   -ms-flex-line-pack: end;
       align-content: flex-end;
+}
+
+.flex-direction-column {
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+.services {
+  background-color: #fff;
+  height: 568px;
+  width: 1400px;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+.services h1 {
+  margin: 0;
+  padding-top: 110px;
+  text-align: center;
+  font-size: 39px;
+}
+
+.services h3 {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  color: #9a9a9a;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 7px;
+}
+
+.services .boxes {
+  margin-top: 77px;
+}
+
+.services .boxes .box {
+  width: 280px;
+  height: 200px;
+}
+
+.services .boxes .box h4 {
+  font-family: "Montserrat", sans-serif;
+  margin: 21px 0 10px 0;
+}
+
+.services .boxes .box p {
+  font-family: "PT Serif", serif;
+  color: #9a9a9a;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0;
 }
 /*# sourceMappingURL=style.css.map */
