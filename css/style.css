@@ -125,28 +125,43 @@ header .hero button {
       flex-direction: column;
 }
 
-.services {
-  background-color: #fff;
-  height: 568px;
-  width: 1400px;
+.reset-width, .services, .out {
   margin: 0 auto;
-  font-family: "Montserrat", sans-serif;
+  width: 1400px;
 }
 
-.services h1 {
+.prop-h1, .services h1, .out h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 39px;
   margin: 0;
   padding-top: 110px;
   text-align: center;
-  font-size: 39px;
 }
 
-.services h3 {
-  font-family: "PT Serif", serif;
-  font-style: italic;
+.prop-h3, .services h3, .out h3 {
   color: #9a9a9a;
-  text-align: center;
+  font-family: "PT Serif", serif;
   font-size: 16px;
+  font-style: italic;
   margin-top: 7px;
+  text-align: center;
+}
+
+.prop-h4, .services .boxes .box h4, .out .boxes .box h4 {
+  font-family: "Montserrat", sans-serif;
+  margin: 21px 0 10px;
+}
+
+.prop-p, .services .boxes .box p, .out .boxes .box p {
+  color: #9a9a9a;
+  font-family: "PT Serif", serif;
+  font-size: 14px;
+  margin: 0;
+}
+
+.services {
+  background-color: #fff;
+  height: 568px;
 }
 
 .services .boxes {
@@ -154,20 +169,42 @@ header .hero button {
 }
 
 .services .boxes .box {
-  width: 280px;
   height: 200px;
-}
-
-.services .boxes .box h4 {
-  font-family: "Montserrat", sans-serif;
-  margin: 21px 0 10px 0;
+  width: 280px;
 }
 
 .services .boxes .box p {
-  font-family: "PT Serif", serif;
-  color: #9a9a9a;
-  font-size: 14px;
   line-height: 24px;
-  margin: 0;
+}
+
+.out {
+  background-color: #f7f7f7;
+  height: 1218px;
+}
+
+.out .boxes {
+  margin-top: 77px;
+}
+
+.out .boxes .box {
+  height: 393px;
+  width: 290px;
+  background-color: #fff;
+}
+
+.out .boxes .box h4 {
+  margin: 23px 0 3px;
+}
+
+.out .boxes .box:nth-of-type(4) {
+  margin-top: 50px;
+}
+
+.out .boxes .box:nth-of-type(5) {
+  margin-top: 50px;
+}
+
+.out .boxes .box:nth-of-type(6) {
+  margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */

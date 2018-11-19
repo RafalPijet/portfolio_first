@@ -3,6 +3,7 @@ $white: #fff;
 $black: #000;
 $yellow: #fed136;
 $grey-light: #9a9a9a;
+$grey-very-light: #f7f7f7;
 
 $font-montserrat: "Montserrat", sans-serif;
 $font-ptserif: "PT Serif", serif;
@@ -129,47 +130,113 @@ header {
   flex-direction: column;
 }
 
+.reset-width {
+  margin: 0 auto;
+  width: 1400px;
+}
+
+.prop-h1 {
+  font-family: $font-montserrat;
+  font-size: 39px;
+  margin: 0;
+  padding-top: 110px;
+  text-align: center;
+}
+
+.prop-h3 {
+  color: $grey-light;
+  font-family: $font-ptserif;
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.prop-h4 {
+  font-family: $font-montserrat;
+  margin: 21px 0 10px;
+}
+
+.prop-p {
+  color: $grey-light;
+  font-family: $font-ptserif;
+  font-size: 14px;
+  margin: 0;
+}
+
 .services {
   background-color: $white;
   height: 568px;
-  width: 1400px;
-  margin: 0 auto;
-  font-family: $font-montserrat;
+  @extend .reset-width;
 
   h1 {
-    margin: 0;
-    padding-top: 110px;
-    text-align: center;
-    font-size: 39px;
+    @extend .prop-h1;
   }
 
   h3 {
-    font-family: $font-ptserif;
-    font-style: italic;
-    color: $grey-light;
-    text-align: center;
-    font-size: 16px;
-    margin-top: 7px;
+    @extend .prop-h3;
   }
 
   .boxes {
     margin-top: 77px;
+
     .box {
-      width: 280px;
       height: 200px;
+      width: 280px;
 
       h4 {
-        font-family: $font-montserrat;
-        margin: 21px 0 10px 0;
+        @extend .prop-h4
       }
 
       p {
-        font-family: $font-ptserif;
-        color: $grey-light;
-        font-size: 14px;
+        @extend .prop-p;
         line-height: 24px;
-        margin: 0;
       }
+    }
+  }
+}
+
+.out {
+  background-color: $grey-very-light;
+  height: 1218px;
+  @extend .reset-width;
+
+  h1 {
+    @extend .prop-h1;
+  }
+
+  h3 {
+    @extend .prop-h3;
+  }
+
+  .boxes {
+    margin-top: 77px;
+
+    .box {
+      height: 393px;
+      width: 290px;
+      background-color: $white;
+
+      h4 {
+        @extend .prop-h4;
+        margin: 23px 0 3px;
+      }
+
+      p {
+        @extend .prop-p;
+      }
+    }
+
+    .box:nth-of-type(4) {
+      margin-top: 50px;
+    }
+
+    .box:nth-of-type(5) {
+      margin-top: 50px;
+    }
+
+    .box:nth-of-type(6) {
+      margin-top: 50px;
     }
   }
 }
