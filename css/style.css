@@ -196,15 +196,7 @@ header .hero button {
   margin: 23px 0 3px;
 }
 
-.out .boxes .box:nth-of-type(4) {
-  margin-top: 50px;
-}
-
-.out .boxes .box:nth-of-type(5) {
-  margin-top: 50px;
-}
-
-.out .boxes .box:nth-of-type(6) {
+.out .boxes .next-row {
   margin-top: 50px;
 }
 /*# sourceMappingURL=style.css.map */
