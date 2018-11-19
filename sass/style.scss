@@ -89,6 +89,19 @@ header {
   }
 }
 
+.col-1 {flex: 8.333%;}
+.col-2 {flex: 16.667%;}
+.col-3 {flex: 25%;}
+.col-4 {flex: 33.333%;}
+.col-5 {flex: 41.667%;}
+.col-6 {flex: 50%;}
+.col-7 {flex: 58.333%;}
+.col-8 {flex: 66.667%;}
+.col-9 {flex: 75%;}
+.col-10 {flex: 83.333%;}
+.col-11 {flex: 91.667%;}
+.col-12 {flex: 100%;}
+
 .container {
   margin: 0 auto;
   max-width: 940px;
@@ -108,6 +121,14 @@ header {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .flex-center {
@@ -224,6 +245,7 @@ header {
 
       p {
         @extend .prop-p;
+        font-style: italic;
       }
     }
 
@@ -232,3 +254,61 @@ header {
     }
   }
 }
+
+.about {
+  background-color: $white;
+
+  @extend .reset-width;
+
+  h1 {
+    @extend .prop-h1;
+  }
+
+  h3 {
+    @extend .prop-h3;
+  }
+
+  .boxes {
+    margin-top: 77px;
+
+    .box {
+      h4 {
+        @extend .prop-h4;
+        margin: 0 0 5px;
+      }
+
+      p {
+        @extend .prop-p;
+        line-height: 23px;
+        margin-top: 14px;
+      }
+
+      img {
+        margin-bottom: 93px;
+      }
+
+      .first {
+        margin-right: -24px;
+      }
+
+      .second {
+        margin: 282px 0 0 -24px;
+      }
+
+      .third {
+        margin: 383px -24px 0 0;
+      }
+
+      .fourth {
+        margin: 372px 0 0 -24px;
+      }
+    }
+  }
+}
+
+#last {
+  margin-bottom: 120px;
+}
+
+
+

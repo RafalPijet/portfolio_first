@@ -78,6 +78,66 @@ header .hero button {
   width: 242px;
 }
 
+.col-1 {
+  -ms-flex: 8.333%;
+      flex: 8.333%;
+}
+
+.col-2 {
+  -ms-flex: 16.667%;
+      flex: 16.667%;
+}
+
+.col-3 {
+  -ms-flex: 25%;
+      flex: 25%;
+}
+
+.col-4 {
+  -ms-flex: 33.333%;
+      flex: 33.333%;
+}
+
+.col-5 {
+  -ms-flex: 41.667%;
+      flex: 41.667%;
+}
+
+.col-6 {
+  -ms-flex: 50%;
+      flex: 50%;
+}
+
+.col-7 {
+  -ms-flex: 58.333%;
+      flex: 58.333%;
+}
+
+.col-8 {
+  -ms-flex: 66.667%;
+      flex: 66.667%;
+}
+
+.col-9 {
+  -ms-flex: 75%;
+      flex: 75%;
+}
+
+.col-10 {
+  -ms-flex: 83.333%;
+      flex: 83.333%;
+}
+
+.col-11 {
+  -ms-flex: 91.667%;
+      flex: 91.667%;
+}
+
+.col-12 {
+  -ms-flex: 100%;
+      flex: 100%;
+}
+
 .container {
   margin: 0 auto;
   max-width: 940px;
@@ -98,6 +158,14 @@ header .hero button {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .flex-center {
@@ -125,12 +193,12 @@ header .hero button {
       flex-direction: column;
 }
 
-.reset-width, .services, .out {
+.reset-width, .services, .out, .about {
   margin: 0 auto;
   width: 1400px;
 }
 
-.prop-h1, .services h1, .out h1 {
+.prop-h1, .services h1, .out h1, .about h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 39px;
   margin: 0;
@@ -138,7 +206,7 @@ header .hero button {
   text-align: center;
 }
 
-.prop-h3, .services h3, .out h3 {
+.prop-h3, .services h3, .out h3, .about h3 {
   color: #9a9a9a;
   font-family: "PT Serif", serif;
   font-size: 16px;
@@ -147,12 +215,12 @@ header .hero button {
   text-align: center;
 }
 
-.prop-h4, .services .boxes .box h4, .out .boxes .box h4 {
+.prop-h4, .services .boxes .box h4, .out .boxes .box h4, .about .boxes .box h4 {
   font-family: "Montserrat", sans-serif;
   margin: 21px 0 10px;
 }
 
-.prop-p, .services .boxes .box p, .out .boxes .box p {
+.prop-p, .services .boxes .box p, .out .boxes .box p, .about .boxes .box p {
   color: #9a9a9a;
   font-family: "PT Serif", serif;
   font-size: 14px;
@@ -196,7 +264,52 @@ header .hero button {
   margin: 23px 0 3px;
 }
 
+.out .boxes .box p {
+  font-style: italic;
+}
+
 .out .boxes .next-row {
   margin-top: 50px;
+}
+
+.about {
+  background-color: #fff;
+}
+
+.about .boxes {
+  margin-top: 77px;
+}
+
+.about .boxes .box h4 {
+  margin: 0 0 5px;
+}
+
+.about .boxes .box p {
+  margin-top: 14px;
+  line-height: 23px;
+}
+
+.about .boxes .box img {
+  margin-bottom: 93px;
+}
+
+.about .boxes .box .first {
+  margin-right: -24px;
+}
+
+.about .boxes .box .second {
+  margin: 282px 0 0 -24px;
+}
+
+.about .boxes .box .third {
+  margin: 383px -24px 0 0;
+}
+
+.about .boxes .box .fourth {
+  margin: 372px 0 0 -24px;
+}
+
+#last {
+  margin-bottom: 120px;
 }
 /*# sourceMappingURL=style.css.map */
