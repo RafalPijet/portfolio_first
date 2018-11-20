@@ -173,6 +173,11 @@ header .hero button {
       justify-content: center;
 }
 
+.flex-end {
+  -ms-flex-pack: end;
+      justify-content: flex-end;
+}
+
 .flex-between {
   -ms-flex-pack: justify;
       justify-content: space-between;
@@ -204,7 +209,7 @@ header .hero button {
   width: 100%;
 }
 
-.prop-h1, .services h1, .out h1, .about h1, .team h1 {
+.prop-h1, .services h1, .out h1, .about h1, .team h1, .contact h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 39px;
   margin: 0;
@@ -212,7 +217,7 @@ header .hero button {
   text-align: center;
 }
 
-.prop-h3, .services h3, .out h3, .about h3, .team h3 {
+.prop-h3, .services h3, .out h3, .about h3, .team h3, .contact h3 {
   color: #9a9a9a;
   font-family: "PT Serif", serif;
   font-size: 16px;
@@ -231,6 +236,13 @@ header .hero button {
   font-family: "PT Serif", serif;
   font-size: 14px;
   margin: 0;
+}
+
+.prop-input, .contact input, .contact textarea {
+  font-size: 14px;
+  color: #f7f7f7;
+  font-weight: 600;
+  border-radius: 3px;
 }
 
 .services {
@@ -400,5 +412,34 @@ header .hero button {
 
 .anothers .row img:nth-of-type(3) {
   margin-right: 43px;
+}
+
+.contact {
+  background: url("../images/map.png") center no-repeat;
+  margin: 0 auto;
+}
+
+.contact h1 {
+  color: #fff;
+}
+
+.contact h3 {
+  padding-bottom: 80px;
+}
+
+.contact input {
+  border-radius: 3px;
+  font-family: "Montserrat", sans-serif;
+  height: 50px;
+  margin: 0 12px 30px 0;
+  padding-left: 18px;
+  width: 456px;
+}
+
+.contact textarea {
+  height: 211px;
+  margin: 0 0 211px 12px;
+  padding: 18px 0 0 18px;
+  width: 455px;
 }
 /*# sourceMappingURL=style.css.map */
