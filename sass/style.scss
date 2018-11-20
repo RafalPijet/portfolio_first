@@ -331,7 +331,7 @@ header {
 
   p.last {
     @extend .prop-p;
-    margin: 36px 147px;
+    margin: 36px 147px 0;
     padding-bottom: 115px;
   }
 
@@ -353,22 +353,22 @@ header {
       }
 
       button {
-        position: relative;
         width: 38px;
         height: 38px;
         border: 3px solid $black;
         border-radius: 50%;
         margin: 12px 5px 0;
+        position: relative;
         cursor: pointer;
         font-size: 20px;
 
         i.fa {
-          position: absolute;
-          width: 38px;
           height: 38px;
           left: -3px;
+          position: absolute;
           top: 7px;
           transition-duration: .5s;
+          width: 38px;
 
           &:hover {
             color: $white;
@@ -397,6 +397,28 @@ header {
       }
     }
   }
+}
+
+.anothers {
+  background-color: $white;
+  @extend .reset-width;
+
+  .row {
+    padding: 60px 69px;
+
+    img:nth-of-type(1) {
+      margin-right: 48px;
+    }
+
+    img:nth-of-type(2) {
+      margin-right: 39px;
+    }
+
+    img:nth-of-type(3) {
+      margin-right: 43px;
+    }
+  }
+
 }
 
 
