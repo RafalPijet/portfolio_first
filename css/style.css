@@ -178,6 +178,11 @@ header .hero button {
       justify-content: space-between;
 }
 
+.flex-around {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
 .flex-center-align {
   -ms-flex-align: center;
       align-items: center;
@@ -193,13 +198,13 @@ header .hero button {
       flex-direction: column;
 }
 
-.reset-width, .services, .out, .about {
+.reset-width, .services, .out, .about, .team {
   margin: 0 auto;
   max-width: 1400px;
   width: 100%;
 }
 
-.prop-h1, .services h1, .out h1, .about h1 {
+.prop-h1, .services h1, .out h1, .about h1, .team h1 {
   font-family: "Montserrat", sans-serif;
   font-size: 39px;
   margin: 0;
@@ -207,7 +212,7 @@ header .hero button {
   text-align: center;
 }
 
-.prop-h3, .services h3, .out h3, .about h3 {
+.prop-h3, .services h3, .out h3, .about h3, .team h3 {
   color: #9a9a9a;
   font-family: "PT Serif", serif;
   font-size: 16px;
@@ -216,12 +221,12 @@ header .hero button {
   text-align: center;
 }
 
-.prop-h4, .services .boxes .box h4, .out .boxes .box h4, .about .boxes .box h4 {
+.prop-h4, .services .boxes .box h4, .out .boxes .box h4, .about .boxes .box h4, .team .boxes .box h4 {
   font-family: "Montserrat", sans-serif;
   margin: 21px 0 10px;
 }
 
-.prop-p, .services .boxes .box p, .out .boxes .box p, .about .boxes .box p {
+.prop-p, .services .boxes .box p, .out .boxes .box p, .about .boxes .box p, .team p.last, .team .boxes .box p {
   color: #9a9a9a;
   font-family: "PT Serif", serif;
   font-size: 14px;
@@ -240,10 +245,6 @@ header .hero button {
   height: 200px;
   width: 280px;
   margin-bottom: 105px;
-}
-
-.services .boxes .box p {
-  line-height: 24px;
 }
 
 .out {
@@ -312,5 +313,72 @@ header .hero button {
 
 #last {
   margin-bottom: 120px;
+}
+
+.team {
+  background-color: #f7f7f7;
+}
+
+.team p.last {
+  margin: 36px 147px;
+  padding-bottom: 115px;
+}
+
+.team .boxes {
+  margin-top: 82px;
+}
+
+.team .boxes .box {
+  height: 350px;
+  width: 222px;
+  margin: 0 30px;
+}
+
+.team .boxes .box h4 {
+  margin-bottom: 4px;
+}
+
+.team .boxes .box button {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  margin: 12px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.team .boxes .box button i.fa {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: -3px;
+  top: 7px;
+  transition-duration: .5s;
+}
+
+.team .boxes .box button i.fa:hover {
+  color: #fff;
+}
+
+.team .boxes .box button.twitter:hover {
+  background-color: #00aced;
+  border-color: #00aced;
+}
+
+.team .boxes .box button.facebook:hover {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.team .boxes .box button.pinterest:hover {
+  background-color: #cb2028;
+  border-color: #cb2028;
+}
+
+.team .boxes .box button.google-plus:hover {
+  background-color: #d95232;
+  border-color: #d95232;
 }
 /*# sourceMappingURL=style.css.map */

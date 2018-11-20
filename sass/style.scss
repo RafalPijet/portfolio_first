@@ -4,6 +4,10 @@ $black: #000;
 $yellow: #fed136;
 $grey-light: #9a9a9a;
 $grey-very-light: #f7f7f7;
+$blue: #00aced;
+$blue-dark: #3b5998;
+$red: #cb2028;
+$orange: #d95232;
 
 $font-montserrat: "Montserrat", sans-serif;
 $font-ptserif: "PT Serif", serif;
@@ -139,6 +143,10 @@ header {
   justify-content: space-between;
 }
 
+.flex-around {
+  justify-content: space-around;
+}
+
 .flex-center-align {
   align-items: center;
 }
@@ -212,7 +220,6 @@ header {
 
       p {
         @extend .prop-p;
-        line-height: 24px;
       }
     }
   }
@@ -258,7 +265,6 @@ header {
 
 .about {
   background-color: $white;
-
   @extend .reset-width;
 
   h1 {
@@ -309,6 +315,88 @@ header {
 
 #last {
   margin-bottom: 120px;
+}
+
+.team {
+  background-color: $grey-very-light;
+  @extend .reset-width;
+
+  h1 {
+    @extend .prop-h1;
+  }
+
+  h3 {
+    @extend .prop-h3;
+  }
+
+  p.last {
+    @extend .prop-p;
+    margin: 36px 147px;
+    padding-bottom: 115px;
+  }
+
+  .boxes {
+    margin-top: 82px;
+
+    .box {
+      height: 350px;
+      width: 222px;
+      margin: 0 30px;
+
+      h4 {
+        @extend .prop-h4;
+        margin-bottom: 4px;
+      }
+
+      p {
+        @extend .prop-p;
+      }
+
+      button {
+        position: relative;
+        width: 38px;
+        height: 38px;
+        border: 3px solid $black;
+        border-radius: 50%;
+        margin: 12px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+
+        i.fa {
+          position: absolute;
+          width: 38px;
+          height: 38px;
+          left: -3px;
+          top: 7px;
+          transition-duration: .5s;
+
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+
+      button.twitter:hover {
+        background-color: $blue;
+        border-color: $blue;
+      }
+
+      button.facebook:hover {
+        background-color: $blue-dark;
+        border-color: $blue-dark;
+      }
+
+      button.pinterest:hover {
+        background-color: $red;
+        border-color: $red;
+      }
+
+      button.google-plus:hover {
+        background-color: $orange;
+        border-color: $orange;
+      }
+    }
+  }
 }
 
 
