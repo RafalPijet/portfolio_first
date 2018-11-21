@@ -203,7 +203,7 @@ header .hero button {
       flex-direction: column;
 }
 
-.reset-width, .services, .out, .about, .team, .anothers {
+.reset-width, .services, .out, .about, .team, .anothers, footer {
   margin: 0 auto;
   max-width: 1400px;
   width: 100%;
@@ -243,6 +243,46 @@ header .hero button {
   color: #f7f7f7;
   font-weight: 600;
   border-radius: 3px;
+}
+
+.prop-button, .team .boxes .box button, footer .row button {
+  width: 38px;
+  height: 38px;
+  border: 3px solid #000;
+  border-radius: 50%;
+  margin: 12px 5px 0;
+  position: relative;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.prop-icon, .team .boxes .box button i.fa, footer .row button i.fa {
+  height: 38px;
+  left: -3px;
+  position: absolute;
+  top: 7px;
+  transition-duration: .5s;
+  width: 38px;
+}
+
+.prop-twitter, .team .boxes .box button.twitter:hover, footer .row button.twitter:hover {
+  background-color: #00aced;
+  border-color: #00aced;
+}
+
+.prop-facebook, .team .boxes .box button.facebook:hover, footer .row button.facebook:hover {
+  background-color: #3b5998;
+  border-color: #3b5998;
+}
+
+.prop-pinterest, .team .boxes .box button.pinterest:hover, footer .row button.pinterest:hover {
+  background-color: #cb2028;
+  border-color: #cb2028;
+}
+
+.prop-google-plus, .team .boxes .box button.google-plus:hover, footer .row button.google-plus:hover {
+  background-color: #d95232;
+  border-color: #d95232;
 }
 
 .services {
@@ -350,48 +390,8 @@ header .hero button {
   margin-bottom: 4px;
 }
 
-.team .boxes .box button {
-  width: 38px;
-  height: 38px;
-  border: 3px solid #000;
-  border-radius: 50%;
-  margin: 12px 5px 0;
-  position: relative;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-.team .boxes .box button i.fa {
-  height: 38px;
-  left: -3px;
-  position: absolute;
-  top: 7px;
-  transition-duration: .5s;
-  width: 38px;
-}
-
 .team .boxes .box button i.fa:hover {
   color: #fff;
-}
-
-.team .boxes .box button.twitter:hover {
-  background-color: #00aced;
-  border-color: #00aced;
-}
-
-.team .boxes .box button.facebook:hover {
-  background-color: #3b5998;
-  border-color: #3b5998;
-}
-
-.team .boxes .box button.pinterest:hover {
-  background-color: #cb2028;
-  border-color: #cb2028;
-}
-
-.team .boxes .box button.google-plus:hover {
-  background-color: #d95232;
-  border-color: #d95232;
 }
 
 .anothers {
@@ -438,8 +438,33 @@ header .hero button {
 
 .contact textarea {
   height: 211px;
-  margin: 0 0 211px 12px;
+  margin: 0 0 180px 12px;
   padding: 18px 0 0 18px;
   width: 455px;
+}
+
+footer {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+footer .row {
+  padding: 17px 0;
+}
+
+footer .row button {
+  margin: 0 10px 0 0;
+  color: #fff;
+  background-color: #222222;
+}
+
+footer .row button i.fa:hover {
+  color: #fff;
+}
+
+footer .row p {
+  margin-right: 120px;
 }
 /*# sourceMappingURL=style.css.map */
