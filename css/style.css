@@ -334,33 +334,20 @@ header .hero button {
   margin-top: 77px;
 }
 
-.about .boxes .box h4 {
-  margin: 0 0 5px;
-}
-
 .about .boxes .box p {
   line-height: 23px;
-  margin-top: 14px;
 }
 
 .about .boxes .box img {
   margin-bottom: 93px;
 }
 
-.about .boxes .box .first {
-  margin-right: -24px;
+.about .boxes .box .left {
+  margin: 0 -24px 5px 0;
 }
 
-.about .boxes .box .second {
-  margin: 282px 0 0 -24px;
-}
-
-.about .boxes .box .third {
-  margin: 383px -24px 0 0;
-}
-
-.about .boxes .box .fourth {
-  margin: 372px 0 0 -24px;
+.about .boxes .box .right {
+  margin: 0 0 5px -24px;
 }
 
 #last {
@@ -465,6 +452,7 @@ footer .row button i.fa:hover {
 }
 
 footer .row p {
-  margin-right: 120px;
+  margin-right: 126px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=style.css.map */

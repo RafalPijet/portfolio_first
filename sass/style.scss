@@ -333,33 +333,24 @@ header {
     .box {
       h4 {
         @extend .prop-h4;
-        margin: 0 0 5px;
+
       }
 
       p {
         @extend .prop-p;
         line-height: 23px;
-        margin-top: 14px;
       }
 
       img {
         margin-bottom: 93px;
       }
 
-      .first {
-        margin-right: -24px;
+      .left {
+        margin: 0 -24px 5px 0;
       }
 
-      .second {
-        margin: 282px 0 0 -24px;
-      }
-
-      .third {
-        margin: 383px -24px 0 0;
-      }
-
-      .fourth {
-        margin: 372px 0 0 -24px;
+      .right {
+        margin: 0 0 5px -24px;
       }
     }
   }
@@ -516,7 +507,8 @@ footer {
     }
 
     p {
-      margin-right: 120px;
+      margin-right: 126px;
+      font-weight: 600;
     }
 
     button.twitter:hover {
