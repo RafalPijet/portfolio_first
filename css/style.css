@@ -455,4 +455,124 @@ footer .row p {
   margin-right: 126px;
   font-weight: 600;
 }
+
+@media (max-width: 992px) {
+  header .hero {
+    margin-top: 50px;
+  }
+  header .hero h1 {
+    font-size: 55px;
+  }
+  header .hero button {
+    margin-bottom: 20px;
+  }
+  .col-m-1 {
+    -ms-flex: 8.33%;
+        flex: 8.33%;
+  }
+  .col-m-2 {
+    -ms-flex: 16.66%;
+        flex: 16.66%;
+  }
+  .col-m-3 {
+    -ms-flex: 25%;
+        flex: 25%;
+  }
+  .col-m-4 {
+    -ms-flex: 33.33%;
+        flex: 33.33%;
+  }
+  .col-m-5 {
+    -ms-flex: 41.66%;
+        flex: 41.66%;
+  }
+  .col-m-6 {
+    -ms-flex: 50%;
+        flex: 50%;
+  }
+  .col-m-7 {
+    -ms-flex: 58.33%;
+        flex: 58.33%;
+  }
+  .col-m-8 {
+    -ms-flex: 66.66%;
+        flex: 66.66%;
+  }
+  .col-m-9 {
+    -ms-flex: 75%;
+        flex: 75%;
+  }
+  .col-m-10 {
+    -ms-flex: 83.33%;
+        flex: 83.33%;
+  }
+  .col-m-11 {
+    -ms-flex: 91.66%;
+        flex: 91.66%;
+  }
+  .col-m-12 {
+    -ms-flex: 100%;
+        flex: 100%;
+  }
+  .flex-m-around {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .flex-m-center {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .flex-m-direction-column {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .flex-m-center-align {
+    -ms-flex-align: center;
+        align-items: center;
+  }
+  .services .boxes .box {
+    margin-bottom: 20px;
+    height: 250px;
+    width: 240px;
+  }
+  .services .boxes .box p {
+    width: 90%;
+  }
+  .out .boxes .box.next-row {
+    margin-top: 0;
+  }
+  .about .boxes .box .left {
+    padding-left: 10px;
+  }
+  .about .boxes .box .right {
+    padding-right: 10px;
+  }
+  .anothers .row {
+    padding: 50px 5px;
+  }
+  .anothers .row img:nth-of-type(1) {
+    margin-right: 0;
+  }
+  .anothers .row img:nth-of-type(2) {
+    margin-right: 0;
+  }
+  .anothers .row img:nth-of-type(3) {
+    margin-right: 0;
+  }
+  .anothers .row img:nth-of-type(4) {
+    margin-right: 0;
+  }
+  .contact h1 {
+    padding-top: 50px;
+  }
+  .contact h3 {
+    padding-bottom: 30px;
+  }
+  .contact input {
+    margin-right: 0;
+  }
+  .contact textarea {
+    margin: 0 0 50px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
