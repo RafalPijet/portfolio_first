@@ -8,7 +8,7 @@ $blue: #00aced;
 $blue-dark: #3b5998;
 $red: #cb2028;
 $orange: #d95232;
-$grey-dark: #222222;
+$grey-dark: #222;
 
 $font-montserrat: "Montserrat", sans-serif;
 $font-ptserif: "PT Serif", serif;
@@ -88,8 +88,57 @@ header {
       font-size: 16px;
       font-weight: 700;
       height: 65px;
-      width: 242px;
       margin-bottom: 155px;
+      width: 242px;
+    }
+  }
+}
+
+footer {
+  background-color: $white;
+  font-family: $font-montserrat;
+  font-size: 13px;
+  color: $grey-light;
+  @extend .reset-width;
+
+  .row {
+    padding: 17px 0;
+
+    button {
+      @extend .prop-button;
+      background-color: $grey-dark;
+      color: $white;
+      margin: 0 10px 0 0;
+
+
+      i.fa {
+        @extend .prop-icon;
+
+        &:hover {
+          color: $white;
+        }
+      }
+    }
+
+    p {
+      margin-right: 126px;
+      font-weight: 600;
+    }
+
+    button.twitter:hover {
+      @extend .prop-twitter;
+    }
+
+    button.facebook:hover {
+      @extend .prop-facebook;
+    }
+
+    button.pinterest:hover {
+      @extend .prop-pinterest;
+    }
+
+    button.google-plus:hover {
+      @extend .prop-google-plus;
     }
   }
 }
@@ -108,7 +157,6 @@ header {
 .col-12 {flex: 100%;}
 
 .container {
-  //border: 1px solid deeppink;
   margin: 0 auto;
   max-width: 940px;
   position: relative;
@@ -382,9 +430,9 @@ header {
     margin-top: 82px;
 
     .box {
+      margin: 0 30px;
       height: 350px;
       width: 222px;
-      margin: 0 30px;
 
       h4 {
         @extend .prop-h4;
@@ -481,56 +529,13 @@ header {
   }
 }
 
-footer {
-  background-color: $white;
-  font-family: $font-montserrat;
-  font-size: 13px;
-  color: $grey-light;
-  @extend .reset-width;
-
-  .row {
-    padding: 17px 0;
-
-    button {
-      @extend .prop-button;
-      margin: 0 10px 0 0;
-      color: $white;
-      background-color: $grey-dark;
-
-      i.fa {
-        @extend .prop-icon;
-
-        &:hover {
-          color: $white;
-        }
-      }
-    }
-
-    p {
-      margin-right: 126px;
-      font-weight: 600;
-    }
-
-    button.twitter:hover {
-      @extend .prop-twitter;
-    }
-
-    button.facebook:hover {
-      @extend .prop-facebook;
-    }
-
-    button.pinterest:hover {
-      @extend .prop-pinterest;
-    }
-
-    button.google-plus:hover {
-      @extend .prop-google-plus;
-    }
-  }
-}
-
 @media (max-width: 992px) {
   header {
+    nav {
+      padding: 55px 10px 0;
+
+    }
+
     .hero {
       margin-top: 50px;
       h1 {
@@ -652,4 +657,109 @@ footer {
   }
 }
 
+@media  (max-width: 768px) {
+  header {
+    nav {
+      img {
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          display: block;
+          padding-bottom: 20px;
+          width: 100vw;
+          background-color: $black;
+          opacity: .7;
 
+          a {
+            font-size: 30px;
+          }
+        }
+
+        li:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    .hero {
+      margin-top: 30px;
+
+      h2 {
+        font-size: 30px;
+      }
+
+      h1 {
+        font-size: 40px;
+      }
+    }
+  }
+
+  footer {
+    .row {
+      p {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .col-s-1 {flex: 8.33%;}
+  .col-s-2 {flex: 16.66%;}
+  .col-s-3 {flex: 25%;}
+  .col-s-4 {flex: 33.33%;}
+  .col-s-5 {flex: 41.66%;}
+  .col-s-6 {flex: 50%;}
+  .col-s-7 {flex: 58.33%;}
+  .col-s-8 {flex: 66.66%;}
+  .col-s-9 {flex: 75%;}
+  .col-s-10 {flex: 83.33%;}
+  .col-s-11 {flex: 91.66%;}
+  .col-s-12 {flex: 100%;}
+
+  .flex-s-direction-column {
+    flex-direction: column;
+  }
+
+  .flex-s-center-align {
+    align-items: center;
+  }
+}
+
+.out {
+  .boxes {
+    .box {
+      background-color: $grey-very-light;
+    }
+  }
+}
+
+.about {
+  .boxes {
+    .box {
+      .empty {
+        display: none;
+      }
+    }
+  }
+}
+
+#last {
+  margin-bottom: 60px;
+}
+
+.team {
+  .boxes {
+    .box {
+      margin-bottom: 50px;
+
+    }
+  }
+}
+
+.anothers {
+  .row {
+    img {
+      margin-bottom: 20px;
+    }
+  }
+}

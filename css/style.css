@@ -74,8 +74,34 @@ header .hero button {
   font-size: 16px;
   font-weight: 700;
   height: 65px;
-  width: 242px;
   margin-bottom: 155px;
+  width: 242px;
+}
+
+footer {
+  background-color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  color: #9a9a9a;
+}
+
+footer .row {
+  padding: 17px 0;
+}
+
+footer .row button {
+  background-color: #222;
+  color: #fff;
+  margin: 0 10px 0 0;
+}
+
+footer .row button i.fa:hover {
+  color: #fff;
+}
+
+footer .row p {
+  margin-right: 126px;
+  font-weight: 600;
 }
 
 .col-1 {
@@ -203,7 +229,7 @@ header .hero button {
       flex-direction: column;
 }
 
-.reset-width, .services, .out, .about, .team, .anothers, footer {
+.reset-width, footer, .services, .out, .about, .team, .anothers {
   margin: 0 auto;
   max-width: 1400px;
   width: 100%;
@@ -245,7 +271,7 @@ header .hero button {
   border-radius: 3px;
 }
 
-.prop-button, .team .boxes .box button, footer .row button {
+.prop-button, footer .row button, .team .boxes .box button {
   width: 38px;
   height: 38px;
   border: 3px solid #000;
@@ -256,7 +282,7 @@ header .hero button {
   font-size: 20px;
 }
 
-.prop-icon, .team .boxes .box button i.fa, footer .row button i.fa {
+.prop-icon, footer .row button i.fa, .team .boxes .box button i.fa {
   height: 38px;
   left: -3px;
   position: absolute;
@@ -265,22 +291,22 @@ header .hero button {
   width: 38px;
 }
 
-.prop-twitter, .team .boxes .box button.twitter:hover, footer .row button.twitter:hover {
+.prop-twitter, footer .row button.twitter:hover, .team .boxes .box button.twitter:hover {
   background-color: #00aced;
   border-color: #00aced;
 }
 
-.prop-facebook, .team .boxes .box button.facebook:hover, footer .row button.facebook:hover {
+.prop-facebook, footer .row button.facebook:hover, .team .boxes .box button.facebook:hover {
   background-color: #3b5998;
   border-color: #3b5998;
 }
 
-.prop-pinterest, .team .boxes .box button.pinterest:hover, footer .row button.pinterest:hover {
+.prop-pinterest, footer .row button.pinterest:hover, .team .boxes .box button.pinterest:hover {
   background-color: #cb2028;
   border-color: #cb2028;
 }
 
-.prop-google-plus, .team .boxes .box button.google-plus:hover, footer .row button.google-plus:hover {
+.prop-google-plus, footer .row button.google-plus:hover, .team .boxes .box button.google-plus:hover {
   background-color: #d95232;
   border-color: #d95232;
 }
@@ -368,9 +394,9 @@ header .hero button {
 }
 
 .team .boxes .box {
+  margin: 0 30px;
   height: 350px;
   width: 222px;
-  margin: 0 30px;
 }
 
 .team .boxes .box h4 {
@@ -430,33 +456,10 @@ header .hero button {
   width: 455px;
 }
 
-footer {
-  background-color: #fff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 13px;
-  color: #9a9a9a;
-}
-
-footer .row {
-  padding: 17px 0;
-}
-
-footer .row button {
-  margin: 0 10px 0 0;
-  color: #fff;
-  background-color: #222222;
-}
-
-footer .row button i.fa:hover {
-  color: #fff;
-}
-
-footer .row p {
-  margin-right: 126px;
-  font-weight: 600;
-}
-
 @media (max-width: 992px) {
+  header nav {
+    padding: 55px 10px 0;
+  }
   header .hero {
     margin-top: 50px;
   }
@@ -574,5 +577,112 @@ footer .row p {
   .contact textarea {
     margin: 0 0 50px;
   }
+}
+
+@media (max-width: 768px) {
+  header nav img {
+    margin-bottom: 20px;
+  }
+  header nav ul li {
+    display: block;
+    padding-bottom: 20px;
+    width: 100vw;
+    background-color: #000;
+    opacity: .7;
+  }
+  header nav ul li a {
+    font-size: 30px;
+  }
+  header nav ul li:last-child {
+    margin-right: 0;
+  }
+  header .hero {
+    margin-top: 30px;
+  }
+  header .hero h2 {
+    font-size: 30px;
+  }
+  header .hero h1 {
+    font-size: 40px;
+  }
+  footer .row p {
+    margin-right: 30px;
+  }
+  .col-s-1 {
+    -ms-flex: 8.33%;
+        flex: 8.33%;
+  }
+  .col-s-2 {
+    -ms-flex: 16.66%;
+        flex: 16.66%;
+  }
+  .col-s-3 {
+    -ms-flex: 25%;
+        flex: 25%;
+  }
+  .col-s-4 {
+    -ms-flex: 33.33%;
+        flex: 33.33%;
+  }
+  .col-s-5 {
+    -ms-flex: 41.66%;
+        flex: 41.66%;
+  }
+  .col-s-6 {
+    -ms-flex: 50%;
+        flex: 50%;
+  }
+  .col-s-7 {
+    -ms-flex: 58.33%;
+        flex: 58.33%;
+  }
+  .col-s-8 {
+    -ms-flex: 66.66%;
+        flex: 66.66%;
+  }
+  .col-s-9 {
+    -ms-flex: 75%;
+        flex: 75%;
+  }
+  .col-s-10 {
+    -ms-flex: 83.33%;
+        flex: 83.33%;
+  }
+  .col-s-11 {
+    -ms-flex: 91.66%;
+        flex: 91.66%;
+  }
+  .col-s-12 {
+    -ms-flex: 100%;
+        flex: 100%;
+  }
+  .flex-s-direction-column {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .flex-s-center-align {
+    -ms-flex-align: center;
+        align-items: center;
+  }
+}
+
+.out .boxes .box {
+  background-color: #f7f7f7;
+}
+
+.about .boxes .box .empty {
+  display: none;
+}
+
+#last {
+  margin-bottom: 60px;
+}
+
+.team .boxes .box {
+  margin-bottom: 50px;
+}
+
+.anothers .row img {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
