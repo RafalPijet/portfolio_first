@@ -139,7 +139,7 @@ body {
   width: 100%;
 }
 
-.prop-h1, .services .title, .out .title, .about .title, .team .title, .contact .title {
+.prop-h1, .contact .title {
   font-family: "Montserrat", sans-serif;
   font-size: 39px;
   margin: 0;
@@ -147,7 +147,7 @@ body {
   text-align: center;
 }
 
-.prop-h3, .services .subtitle, .out .subtitle, .about .subtitle, .team .subtitle, .contact .subtitle {
+.prop-h3, .contact .subtitle {
   color: #9a9a9a;
   font-family: "PT Serif", serif;
   font-size: 16px;
@@ -156,12 +156,12 @@ body {
   text-align: center;
 }
 
-.prop-h4, .services .boxes .box .title-little, .out .boxes .box .title-little, .about .boxes .box .title-little, .team .boxes .box .names {
+.prop-h4, .out .boxes .box .title, .team .boxes .box .names {
   font-family: "Montserrat", sans-serif;
   margin: 21px 0 10px;
 }
 
-.prop-p, .services .boxes .box .subtitle-little, .out .boxes .box .subtitle-little, .about .boxes .box .description, .team .last, .team .boxes .box .function {
+.prop-p, .out .boxes .box .subtitle, .about .boxes .box .description, .team .last {
   color: #9a9a9a;
   font-family: "PT Serif", serif;
   font-size: 14px;
@@ -175,7 +175,7 @@ body {
   border-radius: 3px;
 }
 
-.prop-button, .team .boxes .box .icon-btn, .down .row .icon-btn {
+.icon-btn {
   width: 38px;
   height: 38px;
   border: 3px solid #000;
@@ -186,7 +186,7 @@ body {
   font-size: 20px;
 }
 
-.prop-icon, .team .boxes .box .icon-btn .fa, .down .row .icon-btn .fa {
+.fa {
   height: 38px;
   left: -3px;
   position: absolute;
@@ -234,6 +234,10 @@ body {
   display: inline;
 }
 
+.top .menu .list .item .item:last-child {
+  margin-right: -15px;
+}
+
 .top .menu .list .item .link {
   color: #fff;
   font-size: 16px;
@@ -245,10 +249,6 @@ body {
 .top .menu .list .item:hover .link {
   background-color: #fff;
   color: #000;
-}
-
-.top .menu .list .item:last-child {
-  margin-right: -15px;
 }
 
 .top .hero {
@@ -314,11 +314,11 @@ body {
   background-color: #fff;
 }
 
-.out .boxes .box .title-little {
+.out .boxes .box .title {
   margin: 23px 0 3px;
 }
 
-.out .boxes .box .subtitle-little {
+.out .boxes .box .subtitle {
   font-style: italic;
 }
 
@@ -542,7 +542,7 @@ body {
     height: 250px;
     width: 240px;
   }
-  .services .boxes .box .subtitle-little {
+  .services .boxes .box .subtitle-m {
     width: 90%;
   }
   .out .boxes .box.next-row {
@@ -557,16 +557,7 @@ body {
   .anothers .row {
     padding: 50px 5px;
   }
-  .anothers .row .logo:nth-of-type(1) {
-    margin-right: 0;
-  }
-  .anothers .row .logo:nth-of-type(2) {
-    margin-right: 0;
-  }
-  .anothers .row .logo:nth-of-type(3) {
-    margin-right: 0;
-  }
-  .anothers .row .logo:nth-of-type(4) {
+  .anothers .row .logo {
     margin-right: 0;
   }
   .contact .title {
@@ -650,11 +641,11 @@ body {
     background-color: #000;
     opacity: .7;
   }
-  .top .menu .list .item .link {
-    font-size: 30px;
-  }
   .top .menu .list .item:last-child {
     margin-right: 0;
+  }
+  .top .menu .list .item .link {
+    font-size: 30px;
   }
   .top .hero {
     margin-top: 30px;

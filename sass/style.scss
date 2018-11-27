@@ -134,7 +134,7 @@ body {
   border-radius: 3px;
 }
 
-.prop-button {
+.icon-btn {
   width: 38px;
   height: 38px;
   border: 3px solid $black;
@@ -145,7 +145,7 @@ body {
   font-size: 20px;
 }
 
-.prop-icon {
+.fa {
   height: 38px;
   left: -3px;
   position: absolute;
@@ -189,6 +189,10 @@ body {
       .item {
         display: inline;
 
+        .item:last-child {
+          margin-right: -15px;
+        }
+
         .link {
           color: $white;
           font-size: 16px;
@@ -203,9 +207,6 @@ body {
             color: $black;
           }
         }
-      }
-      .item:last-child {
-        margin-right: -15px;
       }
     }
   }
@@ -249,15 +250,6 @@ body {
   background-color: $white;
   @extend .reset-width;
 
-  .title {
-    @extend .prop-h1;
-  }
-
-  .subtitle {
-    @extend .prop-h3;
-
-  }
-
   .boxes {
     margin-top: 77px;
 
@@ -265,14 +257,6 @@ body {
       height: 200px;
       width: 280px;
       margin-bottom: 105px;
-
-      .title-little {
-        @extend .prop-h4
-      }
-
-      .subtitle-little {
-        @extend .prop-p;
-      }
     }
   }
 }
@@ -280,15 +264,6 @@ body {
 .out {
   background-color: $grey-very-light;
   @extend .reset-width;
-
-  .title {
-    @extend .prop-h1;
-  }
-
-  .subtitle {
-    @extend .prop-h3;
-
-  }
 
   .boxes {
     margin-top: 77px;
@@ -299,12 +274,12 @@ body {
       width: 290px;
       background-color: $white;
 
-      .title-little {
+      .title {
         @extend .prop-h4;
         margin: 23px 0 3px;
       }
 
-      .subtitle-little {
+      .subtitle {
         @extend .prop-p;
         font-style: italic;
       }
@@ -320,26 +295,12 @@ body {
   background-color: $white;
   @extend .reset-width;
 
-  .title {
-    @extend .prop-h1;
-  }
-
-  .subtitle {
-    @extend .prop-h3;
-  }
-
   .boxes {
     margin-top: 77px;
 
     .box {
       .empty {
         display: block;
-
-      }
-
-      .title-little {
-        @extend .prop-h4;
-
       }
 
       .description {
@@ -370,14 +331,6 @@ body {
   background-color: $grey-very-light;
   @extend .reset-width;
 
-  .title {
-    @extend .prop-h1;
-  }
-
-  .subtitle {
-    @extend .prop-h3;
-  }
-
   .last {
     @extend .prop-p;
     margin: 36px 147px 0;
@@ -397,16 +350,8 @@ body {
         margin-bottom: 4px;
       }
 
-      .function {
-        @extend .prop-p;
-      }
-
       .icon-btn {
-        @extend .prop-button;
-
         .fa {
-          @extend .prop-icon;
-
           &:hover {
             color: $white;
           }
@@ -439,16 +384,18 @@ body {
   .row {
     padding: 60px 69px;
 
-    .logo:nth-of-type(1) {
-      margin-right: 48px;
-    }
+    .logo {
+      &:nth-of-type(1) {
+        margin-right: 48px;
+      }
 
-    .logo:nth-of-type(2) {
-      margin-right: 39px;
-    }
+      &:nth-of-type(2) {
+        margin-right: 39px;
+      }
 
-    .logo:nth-of-type(3) {
-      margin-right: 43px;
+      &:nth-of-type(3) {
+        margin-right: 43px;
+      }
     }
   }
 }
@@ -497,24 +444,15 @@ body {
     padding: 17px 0;
 
     .icon-btn {
-      @extend .prop-button;
       background-color: $grey-dark;
       color: $white;
       margin: 0 10px 0 0;
 
-
       .fa {
-        @extend .prop-icon;
-
         &:hover {
           color: $white;
         }
       }
-    }
-
-    .last {
-      margin-right: 126px;
-      font-weight: 600;
     }
 
     .icon-btn.twitter:hover {
@@ -531,6 +469,11 @@ body {
 
     .icon-btn.google-plus:hover {
       @extend .prop-google-plus;
+    }
+
+    .last {
+      margin-right: 126px;
+      font-weight: 600;
     }
   }
 }
@@ -589,7 +532,7 @@ body {
         margin-bottom: 20px;
         height: 250px;
         width: 240px;
-        .subtitle-little {
+        .subtitle-m {
           width: 90%;
         }
       }
@@ -623,23 +566,10 @@ body {
     .row {
       padding: 50px 5px;
 
-      .logo:nth-of-type(1) {
-        margin-right: 0;
-      }
-
-      .logo:nth-of-type(2) {
-        margin-right: 0;
-      }
-
-      .logo:nth-of-type(3) {
-        margin-right: 0;
-      }
-
-      .logo:nth-of-type(4) {
+      .logo {
         margin-right: 0;
       }
     }
-
   }
 
   .contact {
@@ -697,13 +627,13 @@ body {
           background-color: $black;
           opacity: .7;
 
+          &:last-child {
+            margin-right: 0;
+          }
+
           .link {
             font-size: 30px;
           }
-        }
-
-        .item:last-child {
-          margin-right: 0;
         }
       }
     }
@@ -768,3 +698,4 @@ body {
     }
   }
 }
+
